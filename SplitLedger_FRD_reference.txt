@@ -1,0 +1,70 @@
+SplitLedger MVP - Functional Requirements (REFERENCE ONLY)
+============================================================
+This document outlines the functional requirements for the SplitLedger MVP web application.
+NOTE: This file is for context only in Phase 1. Do not implement these features yet.
+
+1. Create a Fragrance Split
+- Enter fragrance name
+- Enter bottle size (ml)
+- Enter bottle price
+- Enter shipping cost
+- Optional notes
+
+2. Manage Participants
+- Add participants
+- Enter participant name
+- Enter requested quantity (ml)
+- Edit participant details
+- Remove participants
+
+3. Validate Split
+- Calculate total allocated ml
+- Ensure allocated ml does not exceed bottle size
+- Display remaining ml
+- Show error if requested ml exceeds available ml
+
+4. Cost Calculation
+- Calculate Total Cost = Bottle Price + Shipping
+- Calculate Cost per ml = Total Cost / Bottle Size
+- Calculate Participant Cost = Requested ml x Cost per ml
+
+5. Display Results
+- Show fragrance information
+- Show cost per ml
+- Show allocated and remaining ml
+- Display participant summary
+
+6. Generate Share Summary
+- Generate a formatted summary with fragrance details, total cost, cost per ml, participant shares and remaining ml
+
+7. Copy Summary
+- Provide a 'Copy Summary' button to copy the generated summary to the clipboard
+
+8. Reset Form
+- Allow clearing all entered data and starting a new split
+
+Validation Requirements
+- Fragrance name is required
+- Bottle size must be greater than zero
+- Bottle price must be greater than zero
+- Prevent negative values
+- Participant quantity must be greater than zero
+- Prevent over-allocation
+- Display validation messages
+
+Non-Functional Requirements
+- Responsive web interface
+- Fast calculations
+- Clean UI
+- No page reloads
+- Single Page Application (SPA)
+- One-click copy to clipboard
+
+Out of Scope (Future Versions)
+- User accounts
+- Database
+- Payment tracking
+- Export to PDF/Excel
+- Images
+- Notifications
+- Admin dashboard
